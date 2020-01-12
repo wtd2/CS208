@@ -1,3 +1,3 @@
 ### CS208@Spring 2020 Source Code
 
-For your conference.
+For your reference.
