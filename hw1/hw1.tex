@@ -1,0 +1,71 @@
+\documentclass[utf-8, 12pt, a4paper, fleqn]{article}
+
+\usepackage{multirow,multicol,indentfirst,amsmath,setspace,geometry,amssymb,parskip,nccmath,proof,amsthm,graphicx}
+\usepackage[ruled,vlined]{algorithm2e}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+% \newcommand{\mat}[1]{\underline{#1}}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2.5cm}
+\setcounter{secnumdepth}{-\maxdimen}
+\setlength{\parindent}{1em}
+
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.13}
+
+\begin{document}
+
+% CS208 Lecture
+\noindent\textbf{Assignment \#1\\SID: 11812103\\Name: ZHANG Wenhao}
+
+\noindent\textit{Chapter 1 Exercise 1, 2, 3}
+
+\paragraph{Ex 1}~{\textbf{False.}}
+\par Suppose $1, 2$ are men and $3, 4$ are women, and the order of their prefrence is:
+\begin{center}
+\begin{tabular}{c|cc}
+&1st&2nd\\
+\hline
+1&3&4\\
+2&4&3\\
+\hline
+3&2&1\\
+4&1&2\\
+\end{tabular}
+\end{center}
+Then we can easily find that for any human, the people he/she prefers first doesn't prefer her first, and then we can say that \textit{there are no stable matchings containing a pair $(m, w)$ such that $m$ is ranked first on the preference list of $w$ and $w$ is ranked first on the preference list of $m$}.
+\paragraph{Ex 2}~{\textbf{True.}}
+\par Assume the proposition is false, which means there is a matching that doesn't contains $(m,w)$, then it is not a stable matching since it will leads $m$ and $w$ be unstable.
+
+\paragraph{Ex 3}~{\textbf{(b).}}
+\par Suppose $n=2$ and the associated ratings of $\mathcal{A}$'s TV shows are $1,3$ and those of $\mathcal{B}$'s TV shows are $2,4$.
+\par One possible situation is $S=(1,3)$ and $T=(2,4)$ (or equivalently $S=(3,1)$ and $T=(4,2)$), in which case $\mathcal{A}$ can change $S$ to $(3,1)$ to win more slots.
+\par Another possible situation is $S=(1,3)$ and $T=(4,2)$ (or equivalently $S=(3,1)$ and $T=(2,4)$), in which case $\mathcal{B}$ can change $T$ to $(2,4)$ to win more slots.
+\par As mentioned above, there is no stable pair of schedules in the given associated ratings.
+
+
+
+\end{document}
