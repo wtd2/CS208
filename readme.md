@@ -36,7 +36,7 @@
 
 #### lab 8 Greedy IV
 
-1001: *Huffman code*
+1001: *Huffman code* [lab7-C@19Fall DSAA](https://acm.sustech.edu.cn/onlinejudge/problem.php?cid=1059&pid=2)
 
 1002: *greedy and DFS* [BZOJ 2034](http://www.lydsy.com/JudgeOnline/problem.php?id=2034)
 
