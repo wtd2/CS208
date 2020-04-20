@@ -40,3 +40,8 @@
 
 1002: *greedy and DFS* [BZOJ 2034](http://www.lydsy.com/JudgeOnline/problem.php?id=2034)
 
+#### lab 9 Divide and Conquer
+
+1001: *two-dimensional poset*
+
+1002: *recursion and counting*
