@@ -40,8 +40,15 @@
 
 1002: *greedy and DFS* [BZOJ 2034](http://www.lydsy.com/JudgeOnline/problem.php?id=2034)
 
-#### lab 9 Divide and Conquer
+#### lab 9 Divide and Conquer I
 
 1001: *two-dimensional poset*
 
 1002: *recursion and counting*
+
+#### lab 10 Divide and Conquer II
+
+1001: *convex hull*
+
+1002: *divide* or *k-d tree* [HDU 2966](http://acm.hdu.edu.cn/showproblem.php?pid=2966)
+
