@@ -2,7 +2,7 @@
 
 #define clr(x) memset(x, 0, sizeof(x))
 
-const int maxn = 10000100;
+const int maxn = 1000100;
 
 typedef long long ll;
 
