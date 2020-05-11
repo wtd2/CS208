@@ -52,3 +52,9 @@
 
 1002: *divide* or *k-d tree* [HDU 2966](http://acm.hdu.edu.cn/showproblem.php?pid=2966)
 
+#### lab11 Divide and Conquer III
+
+1001: *recursion and counting*
+
+1002: *FFT or NTT, primitive root*
+
