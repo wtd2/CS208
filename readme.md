@@ -58,3 +58,9 @@
 
 1002: *FFT or NTT, primitive root*
 
+#### lab12 Dynamic Programming I
+
+1001: *0-1 knapsack*
+
+1002: *DP* [Codeforces 1110D](https://codeforces.com/problemset/problem/1110/D)
+
