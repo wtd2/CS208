@@ -24,7 +24,7 @@
   \par Assume that no two values are the same. Suppose $a_1,a_2,\cdots,a_n$ and $b_1,b_2,\cdots,b_n$ are the values in the first and second database respectively, satisfing that $a_1<a_2<\cdots<a_n$ and $b_1<b_2<\cdots<b_n$. 
   \par Consider the situation that the median is in $a_i$, let it be $a_k$. Easily we can find that $b_{n-k}<a_k<b_{n-k+1}$ (or only $k=n,a_n<b_1$, which can be checked separated). Then using binary search to find $k$. Initially the values between $1$ and $n$ can possibly be the value of $k$. Then we check $x$, when $b_{n-x}<a_x<b_{n-x+1}$, then $k=x$ and the answer is $a_x$. When $a_x<b_{n-x}$, then $x$ is relative small and the possible range for $k$ should be $[x+1,r]$. When $b_{n-x+1}<a_x$, then $x$ is relative large and the possible range for $k$ should be $[l,x-1]$.
   \par After several iterations, either we can find the $k$ or the range will be empty. When the range is empty, we can say that the median is in $b_i$. Using the similar way to find the value of $k$ such that $a_{n-k}<b_k<a_{n-k+1}$ (or $k=n,b_n<a_1$), then we can find the answer.
-  \par It is easy to find that we use at most twice of binary search, with the initial range $O(n)$. Each time we use only query $O(1)$ times. Then the total times we need to query is $O(\log n)$.
+  \par It is easy to find that we use at most twice of binary search, with the initial range $O(n)$. Each time we only query $O(1)$ times. Then the total times we need to query is $O(\log n)$.
   
   \section{Exercise 5.2}
   \par Recall the regular way to count the number of inversions by merge sorting. We divide the array into $2$ parts, solving each part recursively, then merge two parts and conquer the answer.
